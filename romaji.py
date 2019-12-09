@@ -17,8 +17,7 @@ class Romaji:
             if len(newArr):
                 nextL = newArr[0]
                 if nextL not in self.latinVowels:
-                    if l == nextL:
-                        break 
+                    break
         if not(newArr):
             return [word]
         return [word] + self.mapWord(newArr)
